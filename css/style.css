@@ -1,0 +1,258 @@
+h1 {
+  color: greenyellow;
+  font-family: "Signika", sans serif;
+  font-size: 4rem;
+  position: relative;
+  padding: 0.7rem;
+  padding-top: 3rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  /*menu de navegacion fijo*/
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+  /*si quiero que no se vea sobre alguna section, le pongo un z menor*/
+  background-color: rgba(229, 247, 247, 0.952);
+  -webkit-backdrop-filter: blur(0.5px);
+          backdrop-filter: blur(0.5px);
+  -webkit-box-shadow: 2px 2px 10px rgba(134, 152, 184, 0.3);
+          box-shadow: 2px 2px 10px rgba(134, 152, 184, 0.3);
+}
+header .navbar {
+  padding-bottom: 0;
+  padding-top: 0;
+ 
+  
+}
+
+
+
+#nav1 li a {
+  color: green;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 20px;
+  transition: transform 0.5s ease;
+  
+  
+}
+
+#nav1 a:hover {
+  color: #ffd900;
+  transform: translateX(0.5em);
+ 
+}
+
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+main{
+  background-color:rgba(229, 247, 247, 0.952);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    
+    
+}
+
+.Vegetal_express{
+  background-image: url(../Imagenes/Campo.jpg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: gba(229, 247, 247, 0.952);
+ 
+  
+
+}
+
+.Vegetal_express h1, .Vegetal_express {
+  color: greenyellow;
+  font-family: "Signika", sans serif;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #000000;
+  letter-spacing: 5px;
+   padding-top: 100px;
+  
+  }
+  
+
+  .subtitulo{
+  font-family: "Dancing Script", cursive;
+  color: greenyellow;;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  padding-top: 100px;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  animation-name: subtitulo;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-delay: 1.2s;
+  animation-iteration-count: infinite;
+}
+
+h2 {
+
+  font-family: "Dancing Script", cursive;
+  color: greenyellow;;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  padding-top: 30px;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  animation-name: subtitulo;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-delay: 1.2s;
+  animation-iteration-count: infinite;
+  
+}
+#Masinformacion
+
+.carrusel {
+  padding: 50px;
+  background-color:rgba(229, 247, 247, 0.952);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+
+.carousel img {
+  object-fit: cover;
+  object-position: center;
+  height: auto;
+  background-color:rgba(229, 247, 247, 0.952);
+  
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #263238;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+.icons{
+  padding-top: 0.5rem;
+}
+
+.icons a{
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0.5rem;
+  color: #f4f4f4;
+}
+
+.company-name{
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 500px){
+  html{
+      font-size: 50%;
+  }
+}    
+
+@media(min-width: 501px) and (max-width: 768px){
+  html{
+  font-size: 50%;
+  }
+} 
+
+#masinformacion{
+  font-family: "Dancing Script", cursive;
+  color: greenyellow;;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  padding-top: 30px;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  text-align: center;
+
+}
+
+.gallery__title {
+  margin-bottom: 50px;
+}
+
+.gallery__contenedor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 250px;
+  grid-gap: 8px;
+  grid-auto-flow: dense;
+  min-height: 100vh;
+  margin: 20px;
+  margin-bottom: 100px;
+}
+
+.gallery__contenedor :nth-child(1),
+.gallery__contenedor :nth-child(3) {
+  grid-row: span 2;
+}
+
+.gallery__contenedor :nth-child(2) {
+  grid-column: span 2;
+}
+
+.gallery__contenedor :nth-child(8) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery__item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #ffd900;
+}
+
+.gallery__item--image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery__item--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.gallery__item--image:hover img {
+  transition: 0.4s ease-in-out;
+  transform: scale(1.2);
+}
